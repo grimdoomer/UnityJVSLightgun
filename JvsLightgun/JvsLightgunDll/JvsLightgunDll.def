@@ -1,0 +1,20 @@
+LIBRARY   JvsLightgunDll
+EXPORTS
+   OpenSerialPort
+   CloseSerialPort
+   ReadPacket
+   WritePacket
+   JvsCmd_Reset
+   JvsCmd_AssignAddress
+   JvsCmd_RequestDeviceId
+   JvsCmd_GetVersion
+   JvsCmd_GetJvsVersion
+   JvsCmd_GetCommsVersion
+   JvsCmd_GetCapabilities
+   JvsCmd_ReadSwitches
+   JvsCmd_ReadLightgun
+   JvsCmd_WriteGPO
+
+   JvsAsync_CreatePollingThread
+   JvsAsync_DestroyPollingThread
+   JvsAsync_UpdateLightgunState
