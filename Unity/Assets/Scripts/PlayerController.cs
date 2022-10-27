@@ -6,8 +6,6 @@ using UnityEngine.Rendering;
 public class PlayerController : MonoBehaviour
 {
     public GameObject CrosshairObject;
-    public Texture2D CrosshairTexture;
-    public Vector2 CrosshairSize;
 
     public Texture2D BulletHole1;
     public Texture2D BulletHole2;
@@ -28,7 +26,6 @@ public class PlayerController : MonoBehaviour
 
     private LightgunController lightgun = null;
     private bool previousLightgunState = false;
-    private Vector2 lightgunPos;
 
     private int flashFrameCounter = 0;
 
@@ -37,8 +34,6 @@ public class PlayerController : MonoBehaviour
     {
         // Cap FPS to 30.
         Application.targetFrameRate = 30;
-
-        //Cursor.SetCursor(this.CrosshairTexture, new Vector2(this.CrosshairTexture.width / 2, this.CrosshairTexture.height / 2), CursorMode.ForceSoftware);
 
         // Try to get the lightgun controller instance.
         this.lightgun = GetComponent<LightgunController>();
